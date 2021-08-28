@@ -1,12 +1,15 @@
 package com.demo.game.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
 import java.util.List;
 
 // many-many: one end needs to be owner or main definition point of the relationship
 
 // "session" -> name of database table
-@Entity(name = "session") // jpa entity so that we can talk to the database structures
+@Entity(name = "sessions") // jpa entity so that we can talk to the database structures
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Session { // session class will map to conference sessions
     // one instance or row of that data
 

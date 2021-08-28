@@ -92,7 +92,7 @@
 			"response": []
 		},
 		{
-			"name": "Post session",
+			"name": "Add (post) new session",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -116,6 +116,68 @@
 						"api",
 						"v1",
 						"sessions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update session",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"session_name\": \"Monika sessiion\",\r\n    \"session_description\": \"ooo nein\",\r\n    \"session_length\": 30\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/sessions/93",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"sessions",
+						"93"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update session Copy",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"session_name\": \"Monika sessiion\",\r\n    \"session_description\": \"ooo nein\",\r\n    \"session_length\": 30\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/sessions/93",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"sessions",
+						"93"
 					]
 				}
 			},

@@ -153,9 +153,9 @@
 			"response": []
 		},
 		{
-			"name": "Update session Copy",
+			"name": "Delete session",
 			"request": {
-				"method": "PUT",
+				"method": "DELETE",
 				"header": [],
 				"body": {
 					"mode": "raw",
@@ -167,7 +167,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/v1/sessions/93",
+					"raw": "http://localhost:8080/api/v1/sessions/95",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -177,7 +177,7 @@
 						"api",
 						"v1",
 						"sessions",
-						"93"
+						"95"
 					]
 				}
 			},
